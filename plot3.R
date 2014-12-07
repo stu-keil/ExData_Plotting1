@@ -1,5 +1,5 @@
 ##Construct plot3.png
-localpath<-"./CourseProject1/"
+localpath<-"./ExData_Plotting1/"
 filename <- "household_power_consumption.txt"
 filepath<- paste(localpath,filename,sep="")
 data <- read.table(filepath,header=TRUE,sep=";",na.strings="?")
@@ -16,7 +16,7 @@ for(i in 3:9) {
 }
 
 
-png(filename="./CourseProject1/plot3.png", width = 480, height = 480)
+png(filename="./ExData_Plotting1/plot3.png", width = 480, height = 480)
 with(household.energy,plot(Time,Sub_metering_1,type="l",ylab="Energy sub metering",xlab=" "))
 with(household.energy,points(Time,Sub_metering_2,type="l",col="red"))
 with(household.energy,points(Time,Sub_metering_3,type="l",col="blue"))

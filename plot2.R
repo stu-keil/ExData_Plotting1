@@ -1,5 +1,5 @@
 ##Construct plot2.png
-localpath<-"./CourseProject1/"
+localpath<-"./ExData_Plotting1/"
 filename <- "household_power_consumption.txt"
 filepath<- paste(localpath,filename,sep="")
 data <- read.table(filepath,header=TRUE,sep=";",na.strings="?")
@@ -16,7 +16,7 @@ for(i in 3:9) {
 }
 
 
-png(filename="./CourseProject1/plot2.png", width = 480, height = 480)
+png(filename="./ExData_Plotting1/plot2.png", width = 480, height = 480)
 Sys.setlocale('LC_TIME', 'C')
 with(household.energy,plot(Time,Global_active_power,type="l",ylab="Global Active Power (kilowatts)",xlab=" "))
 dev.off()

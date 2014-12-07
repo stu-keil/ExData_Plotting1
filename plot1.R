@@ -1,5 +1,5 @@
 ##Construct plot1.png
-localpath<-"./CourseProject1/"
+localpath<-"./ExData_Plotting1/"
 filename <- "household_power_consumption.txt"
 filepath<- paste(localpath,filename,sep="")
 data <- read.table(filepath,header=TRUE,sep=";",na.strings="?")
@@ -16,6 +16,6 @@ for(i in 3:9) {
 }
 
 
-png(filename="./CourseProject1/plot1.png", width = 480, height = 480)
+png(filename="./ExData_Plotting1/plot1.png", width = 480, height = 480)
 hist(household.energy$Global_active_power,col="red",main="Global Active Power",xlab="Global Active Power (kilowatts)")
 dev.off()
